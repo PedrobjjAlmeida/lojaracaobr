@@ -1,202 +1,26 @@
-/****** Importação *******/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/**
+* Ra��es BR
+* @author Pedro Noga
+*/
 
-/****** Padronização *******/
-* {
-    padding: 0; 
-    margin: 0;
-}
+@charset "utf-8";
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    /*background-color: #7dfabb;*/
+	font-family: serif;
+	text-align: center;
+	line-height: 100px;
 }
 
-.Layout {
-    /*background-color: #ffff00;*/
-    max-width: 1140px;
-    margin: 0 auto; 
+h1 {
+	color: #008B8B;
+	text-align: center;
 }
-.Flex{
-    display: flex;
-    
-}
-/***** Cabeçalho ******/
-header {
-    height: 150px;
-    background: url(imagens/fundo1.png);
+.Botao1 {
+	text-decoration: none;
+	background-color: #2c2814;
+	padding: 10px 5px 10px 5px;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 3px;
 }
 
-#logo {
-    float: left;
-}
-
-#logo img {
-    margin-top: 20px;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    list-style: none;
-    margin-top: 70px;
-}
-
-nav ul li {
-    float: left;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 18px;
-    text-shadow: #000000 0.10em 0.10em 0.10em;
-}
-
-nav ul li a:hover{
-    color: rgb(22, 148, 197);
-}
-
-/****** Estoque ******/
-#Estoque{
-	background-color: #ff8514;
-    margin: 20px;
-    margin-left: 60px;
-    color:#ffffff;
-    padding: 20px 30px 20px 30px;
-    border-radius: 15px;
-}
-
-/****** Banner ******/
-main {
-    background: url(imagens/banner.png);
-    background-size: cover;
-    height: 400px;    
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
- main h1{
-     color: #ffffff;
-     font-size: 7em;
-     text-shadow: #000000 0.10em 0.10em 0.10em;
- }
- /***** sobre ******/
- #sobre {
-    background: url(imagens/fundo1.png);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 50px 0px 50px 0px; /*top right bottom left*/
-}
-
-#destaque {
-  flex: 50%;
-  text-align: center;
-}
-
-#destaque img {
-    border-radius: 50%;
-}
-
-#textodestaque{
-    margin-left: 50px;
-    color: black;
-}
-
-#textodestaque h2{
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-#textodestaque p{
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-/***** Produtos ******/
-#quebra h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 35px;
-}
-.c1{
-    text-align: center;
-    margin-top: 25px;
-}
-.c2{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-/****** Conteúdo (Wireframe) ******/
-#conteudo {
-    background: url(imagens/fundo1.png);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 50px 0px 50px 0px; /*top right bottom left*/
-}
-#textoconteudo h2{
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-#textoconteudo p{
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #ffffff;
-}
-
-#textoconteudo a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.3em;
-    background-color: #000000;
-    padding: 20px 30px 20px 30px;
-    border-radius: 25px;
-}
-/****** contato ******/
-#contato {
-    padding: 50px 0px 50px 0px; /*top right bottom left*/
-}
-
-#fone{
-    flex: 60%;
-    padding-left: 250px;
-    color: #000000;
-}
-
-#fone h2{
-    margin-bottom: 25px;
-    color: black;
-}
-
-#mapa{
-    flex:60%;
-    margin-bottom: 50px;
-}
-/***** Rodapé ******/
-footer {
-    height: 100px;
-    background: url(imagens/fundo4.png);
-}
-
-#copyright {
-   /*background-color: #fff0f0;*/
-    float: left;
-}
-
-#copyright p {
-    margin-top: 35px;
-    color: #000000;
-    font-size: 20px;
-}
-
-#social {
-   /*background-color: #977171;*/
-    float: right;
-    margin-top: 20px;
-}
